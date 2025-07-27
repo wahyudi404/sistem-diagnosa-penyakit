@@ -155,7 +155,7 @@ export default function HasilDiagnosa({ hasil }: { hasil: HasilProps }) {
                                     <div className="text-muted-foreground leading-none">
                                         {hasil.data_pengujian.map((gejala, index) => (
                                             <span key={index}>
-                                                G{gejala.gejala_id}{index !== hasil.data_pengujian.length - 1 ? ', ' : ''}
+                                                {gejala.nama_gejala} [G{gejala.gejala_id}]{index !== hasil.data_pengujian.length - 1 ? ', ' : ''}
                                             </span>
                                         ))}
                                     </div>
